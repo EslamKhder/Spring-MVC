@@ -7,7 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Hi Eslam</h1>
-<a href="signin">Log in</a>
+
+<h1>Log in </h1>
+
+<form action="loginprocess">
+	<input type="text" placeholder="username" name="user"> 
+	<input type="password" placeholder="password" name="pass"> 
+	<input type="submit" value="Done">
+</form>
 </body>
 </html>

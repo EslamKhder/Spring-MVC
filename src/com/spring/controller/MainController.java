@@ -17,4 +17,16 @@ public class MainController {
 	public String myPro() {
 		return "myprofile";
 	}
+	
+	@RequestMapping("/signin")
+	// http://localhost:9090/spring-mvc/signin
+	public String myLogin() {
+		return "login";
+	}
+	
+	@RequestMapping("/loginprocess")
+	// http://localhost:9090/spring-mvc/loginprocess
+	public String formProcess() {
+		return "main";
+	}
 }

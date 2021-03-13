@@ -11,5 +11,9 @@
 <h1>Hi</h1>
 <h3>userName :  ${param.user} </h3>
 <h3>password :  ${param.pass}</h3>
+
+////////////////////////////////////////////////
+<h3>userName :  ${myUserName} </h3>
+<h3>password :  ${myPassword}</h3>
 </body>
 </html>

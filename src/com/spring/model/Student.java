@@ -2,6 +2,7 @@ package com.spring.model;
 
 import java.util.HashMap;
 
+
 public class Student {
 
 	private String fName;

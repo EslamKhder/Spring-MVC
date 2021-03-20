@@ -11,8 +11,11 @@
 <body>
 	<f:form action="processmvctags" modelAttribute="student">
 		FirstName : <f:input path="fName"/>
+		<br>
 		LastName : <f:input path="lName"/>
+		<br>
 		Age : <f:input path="age"/>
+		<br>
 		Country : 
 		<f:select path="country">
 			<f:options items="${student.countryOptions}"/>
@@ -30,7 +33,7 @@
 		<f:checkbox path="players" value="Messi"/>Messi
 		<f:checkbox path="players" value="CR7"/>CR7
 		<f:checkbox path="players" value="Salah"/>Salah
-		
+		<br>
 		<input type="submit" value="Done">
 		
 	</f:form>

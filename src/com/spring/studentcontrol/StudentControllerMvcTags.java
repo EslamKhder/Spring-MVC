@@ -1,11 +1,16 @@
 package com.spring.studentcontrol;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.model.Student;
+
+import jakarta.validation.Valid;
+
 
 
 //http://localhost:9090/spring-mvc/student-mvc-tags
@@ -25,7 +30,25 @@ public class StudentControllerMvcTags {
 	
 	
 	@RequestMapping("/processmvctags")
-	public String ShowInfo(@ModelAttribute("student") Student student) {
-		return "student-front-mvc-tags/showdatastudent";
+	public String ShowInfo(@Valid @ModelAttribute("student") Student student,
+						   BindingResult bindingResult) {
+		if(bindingResult.hasErrors()) {
+			return "student-front-mvc-tags/student-account";
+		} else {
+			return "student-front-mvc-tags/showdatastudent";
+		}
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+

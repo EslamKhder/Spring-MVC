@@ -7,11 +7,18 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<style type="text/css">
+	.error
+	{
+		color: red;
+		font-weight: bold;
+	}
+</style>
 </head>
 <body>
 	<f:form action="processmvctags" modelAttribute="student">
 		FirstName : <f:input path="fName"/>
-		<f:errors path="fName" />
+		<f:errors path="fName" cssClass="error"/>
 		<br>
 		LastName : <f:input path="lName"/>
 		<br>

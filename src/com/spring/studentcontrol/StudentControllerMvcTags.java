@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.model.Student;
 
-import jakarta.validation.Valid;
-
+import javax.validation.Valid;
 
 
 //http://localhost:9090/spring-mvc/student-mvc-tags

@@ -25,6 +25,10 @@
 		Age : <f:input path="age"/>
 		<f:errors path="age" cssClass="error"/>
 		<br>
+		
+		email : <f:input path="email"/>
+		<f:errors path="email" cssClass="error"/>
+		<br>
 		Country : 
 		<f:select path="country">
 			<f:options items="${student.countryOptions}"/>

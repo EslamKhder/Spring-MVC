@@ -13,8 +13,10 @@
 <p>FirstName : ${student.fName}</p>
 <p>LastName :  ${student.lName}</p>
 <p>Age :  ${student.age}</p>
+<p>email :  ${student.email}</p>
 <p>Country : ${student.country}</p>
 <p>language : ${student.language}</p>
+
 <p>Players : 
 	<c:forEach var="pl" items="${student.players}">
 		${pl}

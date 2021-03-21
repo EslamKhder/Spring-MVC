@@ -23,6 +23,7 @@
 		LastName : <f:input path="lName"/>
 		<br>
 		Age : <f:input path="age"/>
+		<f:errors path="age" cssClass="error"/>
 		<br>
 		Country : 
 		<f:select path="country">

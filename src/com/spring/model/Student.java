@@ -21,6 +21,10 @@ public class Student {
 	@Max(value = 50,message = "must be less than or equal 50")
 	private String age;
 	
+	
+	@NotNull(message = "required")
+	private Integer code;
+	
 	@NotNull(message = "required")
 	@Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$",
 			 message = "Invalid Email")
@@ -106,6 +110,14 @@ public class Student {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public Integer getCode() {
+		return code;
+	}
+
+	public void setCode(Integer code) {
+		this.code = code;
 	}
 	
 }

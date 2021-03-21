@@ -25,7 +25,9 @@
 		Age : <f:input path="age"/>
 		<f:errors path="age" cssClass="error"/>
 		<br>
-		
+		code : <f:input path="code"/>
+		<f:errors path="code" cssClass="error"/>
+		<br>
 		email : <f:input path="email"/>
 		<f:errors path="email" cssClass="error"/>
 		<br>

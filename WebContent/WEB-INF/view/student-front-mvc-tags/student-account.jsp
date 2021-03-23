@@ -28,6 +28,9 @@
 		code : <f:input path="code"/>
 		<f:errors path="code" cssClass="error"/>
 		<br>
+		indexCountry : <f:input path="indexCountry"/>
+		<f:errors path="indexCountry" cssClass="error"/>
+		<br>
 		email : <f:input path="email"/>
 		<f:errors path="email" cssClass="error"/>
 		<br>

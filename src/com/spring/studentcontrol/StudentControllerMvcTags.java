@@ -34,6 +34,7 @@ public class StudentControllerMvcTags {
 	@RequestMapping("/processmvctags")
 	public String ShowInfo(@Valid @ModelAttribute("student") Student student,
 						   BindingResult bindingResult) {
+		System.out.println(bindingResult);
 		if(bindingResult.hasErrors()) {
 			return "student-front-mvc-tags/student-account";
 		} else {

@@ -8,6 +8,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.spring.validation.VertyCode;
+
 public class Student {
 
 	@NotNull(message = "required")
@@ -21,6 +23,8 @@ public class Student {
 	@Max(value = 50,message = "must be less than or equal 50")
 	private String age;
 	
+	@VertyCode
+	private String indexCountry;
 	
 	@NotNull(message = "required")
 	private Integer code;
